@@ -339,22 +339,71 @@
                         </li>
                     </ul>
                 </div>
+                <div class="e-mail-input">
+                    <form class="subscribe" name="Subscribe" autocomplete="off" >
+                        <label class="subscribe-label">
+                            <p class="social-text">Subscribe</p>
+                            <input
+                                class="subscribe-input"
+                                type="text"
+                                name="e-mail"
+                                placeholder="E-mail"
+                                autofocus
+                            />
+                        </label>
+                        <button class="subscribe-button" type="submit">
+                            <p class="subscribe-text">Subscribe</p>
+                            <svg class="subscribe-icon" width="24" height="24"><use href="./images/icons.svg#icon-icon-send"></use></svg>
+                        </button>
+                    </form>
+                </div>
             </div>
             
         </footer>
+
 <!-- modal -->
-
-<form class="modal">
     <div class="modal-content">
+        <svg></svg> 
+        <p>Leave your contacts and we will call you back</p>
+        <form class="modal" type="text" autocomplete="off">
+            <label>
+              Name  
+              <input 
+                class="modal-input"
+                type="text"
+                name="username"
+               >               
+            </label>
+            <label>
+              Phone
+              <input
+                class="modal-input"
+                type="text"
+                name="Phone"
+                >
+            </label>
+            <label>
+                E-mail
+                <input
+                    class="modal-input"
+                    type="text"
+                    name="e-mail"
+                    >
+            </label>
+            <label>
+                Comment
+                <textarea
+                    class="modal-input"
+                    type="text"
+                    name="Comment"
+                    placeholder="Text input"
+                ></textarea>
+            </label>
+            <svg></svg>
+            <button class="modal-button" type="submit">Send</button>
 
-    </div>
+        </form>             
+    </div>  
 
-
-</form>
-            
-                
-            
-                
-                    
 </body>
 </html>
