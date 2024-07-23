@@ -453,8 +453,10 @@ button {
     letter-spacing: 0.04em;
     text-align: left;
     padding-left: 16px;
+    padding-top: 8px;
     color: var(--white);
     border: none;
+    
     
 }
 
@@ -470,6 +472,7 @@ button {
     background-color: var(--iris);
     cursor: pointer;
     display: flex;
+    gap: 16px;
     
 }
 
@@ -497,6 +500,19 @@ padding-bottom: 8px;
     padding-right: 24px; */ 
 }
 
+.modal-container{
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background:var(--navy-blue-modal); */
+    /* z-index: 1000; */
+}
+
 .modal-content {
         width: 408px;
     height: 584px;
@@ -509,6 +525,8 @@ padding-bottom: 8px;
     box-shadow: 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F, 0px 2px 1px 0px #00000033;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-text {
@@ -548,8 +566,7 @@ padding-bottom: 8px;
 }
 
 .close-icon:hover {
-    background: var(--white);
-    
+    fill: var(--white);
 }
 .contacts-text {
     font-family: Roboto;
@@ -581,6 +598,10 @@ padding-bottom: 8px;
     border: 1.25px 0px 0px 0px;
     opacity: 0px;
     border: 1.25px solid var(--navy-blue);
+    /* position:absolute; */
+    /* top:50%;
+    left:20%;
+    transform: translate(-50%, -50%); */
 }
 
 .modal-input {
@@ -606,6 +627,18 @@ padding-bottom: 8px;
     background-color: var(--dairy);
 }
 
+.comment-input::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    text-align: left;
+   color: rgba(117, 117, 117, 0.5);
+   padding-left: 16px;
+   padding-top: 8px;
+
+}
+
 .modal-button {
     width:169px;
     height:56px;
@@ -616,6 +649,11 @@ padding-bottom: 8px;
     box-shadow: 0px 4px 4px 0px #00000026;
     border: none;
     color: var(--white);
+    margin-bottom: 24px;
+}
+
+.checkbox-input:checked {
+background-color: var(--ocean);
 }
 
 .checkbox-text {
