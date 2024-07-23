@@ -514,7 +514,7 @@ padding-bottom: 8px;
 }
 
 .modal-content {
-        width: 408px;
+    width: 408px;
     height: 584px;
     top: 80px;
     left: 516px;
@@ -527,6 +527,9 @@ padding-bottom: 8px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .modal-text {
@@ -536,6 +539,7 @@ padding-bottom: 8px;
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--navy-blue);
+    padding-bottom: 16px;
     }
 
 .close-ellipse {
@@ -550,7 +554,9 @@ padding-bottom: 8px;
     align-items: center;
     border: 1px solid #0000001A;
     cursor: pointer;
-
+    position:absolute;
+    top: 24px;
+    left: 360px;
 }
 
 .close-ellipse:hover {
@@ -576,8 +582,6 @@ padding-bottom: 8px;
     letter-spacing: 0.04em;
     text-align: left;
     color: var(--light-slate);
-    padding-top: 8px;
-    padding-bottom: 4px;
 }
 
 .contacts-field {
@@ -586,23 +590,11 @@ padding-bottom: 8px;
 
 .contacts-icon {
     position: absolute;
-    top: 30%;
-    left: 5%;
-    transform: translate(-50%, -50%);
+    top: 8px;
+    left: 16px;
+    /* transform: translate(-50%, -50%); */
 }
 
-.line {
-    width: 18px;
-    height: 0px;
-    gap: 0px;
-    border: 1.25px 0px 0px 0px;
-    opacity: 0px;
-    border: 1.25px solid var(--navy-blue);
-    /* position:absolute; */
-    /* top:50%;
-    left:20%;
-    transform: translate(-50%, -50%); */
-}
 
 .modal-input {
     width: 360px;
@@ -613,8 +605,13 @@ padding-bottom: 8px;
     opacity: 0px;
     border: 1px solid var(--navy-blue-modal);
     background-color: var(--dairy);
-
+    padding: 11px 38px;
+    margin-top: 4px;
 }
+
+/* .input:placeholder-shown {
+    border: 1px solid rgba(77, 90, 229, 1);
+} */
 
 .comment-input {
     width: 360px;
@@ -625,6 +622,10 @@ padding-bottom: 8px;
     opacity: 0px;
     border: 1px solid var(--navy-blue-modal);
     background-color: var(--dairy);
+    padding-left:16px;
+    padding-top: 8px;
+    resize: none;
+
 }
 
 .comment-input::placeholder {
@@ -651,6 +652,15 @@ padding-bottom: 8px;
     color: var(--white);
     margin-bottom: 24px;
 }
+
+.center-btn {
+    display: flex;
+    text-align: center; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+    
 
 .checkbox-input:checked {
 background-color: var(--ocean);
