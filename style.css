@@ -443,12 +443,14 @@ button {
     border-radius: 4px;
     opacity: 0px;
     background-color: var(--navy-blue);
+    padding :8px 16px;
+    color: var(--white);
+    caret-color: var(--white);
 }
 
 .subscribe-input::placeholder {
-    font-family: Roboto;
+    
     font-size: 12px;
-    font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.04em;
     text-align: left;
@@ -456,6 +458,7 @@ button {
     padding-top: 8px;
     color: var(--white);
     border: none;
+    
     
     
 }
@@ -500,17 +503,14 @@ padding-bottom: 8px;
     padding-right: 24px; */ 
 }
 
-.modal-container{
-    /* position: fixed; */
+.backdrop {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background:var(--navy-blue-modal); */
-    /* z-index: 1000; */
+    background: rgba(46, 47, 66, 0.4);
+
 }
 
 .modal-content {
@@ -540,6 +540,11 @@ padding-bottom: 8px;
     text-align: center;
     color: var(--navy-blue);
     padding-bottom: 16px;
+    padding-top: 24px;
+    }
+
+textarea{
+    padding: 8px 16px;
     }
 
 .close-ellipse {
@@ -575,7 +580,6 @@ padding-bottom: 8px;
     fill: var(--white);
 }
 .contacts-text {
-    font-family: Roboto;
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
@@ -592,9 +596,7 @@ padding-bottom: 8px;
     position: absolute;
     top: 8px;
     left: 16px;
-    /* transform: translate(-50%, -50%); */
 }
-
 
 .modal-input {
     width: 360px;
@@ -603,15 +605,19 @@ padding-bottom: 8px;
     gap: 0px;
     border-radius: 4px;
     opacity: 0px;
-    border: 1px solid var(--navy-blue-modal);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: var(--dairy);
     padding: 11px 38px;
     margin-top: 4px;
 }
 
-/* .input:placeholder-shown {
-    border: 1px solid rgba(77, 90, 229, 1);
-} */
+.modal-input:focus {
+    border: 1px solid var(--iris);
+    outline: none; /* Remove default outline */
+  }
+.contacts-field .modal-input:focus + .contacts-icon {
+    fill: var(--iris); /* Change icon color to 'iris' when input is focused */
+  }
 
 .comment-input {
     width: 360px;
@@ -620,12 +626,13 @@ padding-bottom: 8px;
     gap: 0px;
     border-radius: 4px;
     opacity: 0px;
-    border: 1px solid var(--navy-blue-modal);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: var(--dairy);
-    padding-left:16px;
-    padding-top: 8px;
     resize: none;
-
+}
+.comment-input:focus {
+    border: 1px solid var(--iris);
+    outline: none;
 }
 
 .comment-input::placeholder {
@@ -634,9 +641,7 @@ padding-bottom: 8px;
     line-height: 14px;
     letter-spacing: 0.04em;
     text-align: left;
-   color: rgba(117, 117, 117, 0.5);
-   padding-left: 16px;
-   padding-top: 8px;
+    color: rgba(117, 117, 117, 0.5);
 
 }
 
@@ -661,6 +666,10 @@ padding-bottom: 8px;
     justify-content: center; 
 }
     
+.checkbox-field {
+    padding-top:16px;
+    padding-bottom: 24px;
+}
 
 .checkbox-input:checked {
 background-color: var(--ocean);
@@ -674,7 +683,6 @@ background-color: var(--ocean);
     line-height: 14px;
     letter-spacing: 0.04em;
     text-align: left;
-
 }
 
 .checkbox-link {
