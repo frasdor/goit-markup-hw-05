@@ -419,15 +419,12 @@ footer .elipse:hover, .elipse:focus {
 .component {
     display: flex;
     align-items: baseline;
-    gap:120px;
 }
 
-/* .info-text { 
+.social {
+    margin-left: 80px;
     margin-right:120px;
-} */
-/* .social {
-    margin-right: 80px;
-} */
+}
  
 input,
 textarea,
